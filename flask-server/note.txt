@@ -1,0 +1,7 @@
+section >> thẻ semantic >> nhóm lại 1 khối
+
+
+<MainCard>
+  <LocationCard location={location} />
+  <InfoCard current={current} />
+</MainCard>

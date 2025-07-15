@@ -1,0 +1,18 @@
+/* .header-navbar-menu {
+}
+.header-navbar-content {
+} */
+
+.header-navbar-menu-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header-navbar-menuItem {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.header-navbar-menuItem.active {
+  /* .header-navbar-menuItem:active { nhấp chuột  */
+  color: green;
+}

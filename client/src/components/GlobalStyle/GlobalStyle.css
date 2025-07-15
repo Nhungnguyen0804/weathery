@@ -1,6 +1,8 @@
 :root {
   --primary: black;
+  --tim1: #b074e6;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -9,4 +11,12 @@ body {
   font-family: "Calibri", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+/* cho tất cả các phần tử trên trang. */
+/* reset css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* tính luôn cả nội dung + padding + border. */
 }

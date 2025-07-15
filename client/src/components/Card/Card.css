@@ -1,0 +1,58 @@
+.card-base {
+  /* background-color: transparent; */
+  width: 95%;
+  border-radius: 49px;
+  margin: 30px;
+  padding: 39px;
+}
+
+/* .card-base:hover {
+  transform: translateY(-4px);
+} */
+
+.mainCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainCard-location {
+  background-color: var(--tim1);
+  font-weight: bold;
+  font-family: "Calibri";
+
+  padding: 5px 15px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.cardItem-value {
+  padding-left: 5px;
+}
+
+.mainCard-nhietDo {
+  font-family: "Impact Black";
+  font-size: 150px;
+}
+
+.mainCard-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15px;
+  line-height: 1;
+}
+
+.mainCard-date-week {
+  font-size: 80px;
+  font-family: "Candara Black";
+}
+
+.mainCard-date-today {
+  padding-left: 10px;
+}
+.mainCard-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "code": 1000,
+    "day": "Nắng rực rỡ",
+    "night": "Trời trong veo"
+  },
+  {
+    "code": 1003,
+    "day": "Mây lác đác",
+    "night": "Mây lác đác"
+  },
+  {
+    "code": 1006,
+    "day": "Nhiều mây",
+    "night": "Nhiều mây"
+  },
+  {
+    "code": 1009,
+    "day": "Mây phủ kín",
+    "night": "Mây phủ kín"
+  },
+  {
+    "code": 1030,
+    "day": "Sương mù dày",
+    "night": "Sương mù dày"
+  },
+  {
+    "code": 1063,
+    "day": "Mưa lất phất",
+    "night": "Mưa lất phất"
+  },
+  {
+    "code": 1066,
+    "day": "Tuyết lác đác",
+    "night": "Tuyết lác đác"
+  },
+  {
+    "code": 1069,
+    "day": "Mưa tuyết nhẹ",
+    "night": "Mưa tuyết nhẹ"
+  },
+  {
+    "code": 1072,
+    "day": "Mưa phùn đóng băng nhẹ",
+    "night": "Mưa phùn đóng băng nhẹ"
+  },
+  {
+    "code": 1087,
+    "day": "Có dông rải rác",
+    "night": "Có dông rải rác"
+  },
+  {
+    "code": 1114,
+    "day": "Tuyết thổi mạnh",
+    "night": "Tuyết thổi mạnh"
+  },
+  {
+    "code": 1117,
+    "day": "Bão tuyết",
+    "night": "Bão tuyết"
+  },
+  {
+    "code": 1135,
+    "day": "Sương mù mờ mịt",
+    "night": "Sương mù mờ mịt"
+  },
+  {
+    "code": 1147,
+    "day": "Sương mù đóng băng",
+    "night": "Sương mù đóng băng"
+  },
+  {
+    "code": 1150,
+    "day": "Mưa phùn lác đác",
+    "night": "Mưa phùn lác đác"
+  },
+  {
+    "code": 1153,
+    "day": "Mưa phùn nhẹ",
+    "night": "Mưa phùn nhẹ"
+  },
+  {
+    "code": 1168,
+    "day": "Mưa phùn đóng băng",
+    "night": "Mưa phùn đóng băng"
+  },
+  {
+    "code": 1171,
+    "day": "Mưa phùn đóng băng nặng",
+    "night": "Mưa phùn đóng băng nặng"
+  },
+  {
+    "code": 1180,
+    "day": "Mưa nhẹ lác đác",
+    "night": "Mưa nhẹ lác đác"
+  },
+  {
+    "code": 1183,
+    "day": "Mưa nhẹ",
+    "night": "Mưa nhẹ"
+  },
+  {
+    "code": 1186,
+    "day": "Mưa vừa lúc có lúc không",
+    "night": "Mưa vừa lúc có lúc không"
+  },
+  {
+    "code": 1189,
+    "day": "Mưa vừa",
+    "night": "Mưa vừa"
+  },
+  {
+    "code": 1192,
+    "day": "Mưa to từng đợt",
+    "night": "Mưa to từng đợt"
+  },
+  {
+    "code": 1195,
+    "day": "Mưa to",
+    "night": "Mưa to"
+  },
+  {
+    "code": 1198,
+    "day": "Mưa đóng băng nhẹ",
+    "night": "Mưa đóng băng nhẹ"
+  },
+  {
+    "code": 1201,
+    "day": "Mưa đóng băng vừa hoặc to",
+    "night": "Mưa đóng băng vừa hoặc to"
+  },
+  {
+    "code": 1204,
+    "day": "Mưa tuyết nhẹ",
+    "night": "Mưa tuyết nhẹ"
+  },
+  {
+    "code": 1207,
+    "day": "Mưa tuyết vừa hoặc nặng",
+    "night": "Mưa tuyết vừa hoặc nặng"
+  },
+  {
+    "code": 1210,
+    "day": "Tuyết nhẹ lác đác",
+    "night": "Tuyết nhẹ lác đác"
+  },
+  {
+    "code": 1213,
+    "day": "Tuyết nhẹ",
+    "night": "Tuyết nhẹ"
+  },
+  {
+    "code": 1216,
+    "day": "Tuyết vừa lác đác",
+    "night": "Tuyết vừa lác đác"
+  },
+  {
+    "code": 1219,
+    "day": "Tuyết vừa",
+    "night": "Tuyết vừa"
+  },
+  {
+    "code": 1222,
+    "day": "Tuyết nặng lác đác",
+    "night": "Tuyết nặng lác đác"
+  },
+  {
+    "code": 1225,
+    "day": "Tuyết dày",
+    "night": "Tuyết dày"
+  },
+  {
+    "code": 1237,
+    "day": "Mưa đá",
+    "night": "Mưa đá"
+  },
+  {
+    "code": 1240,
+    "day": "Mưa rào nhẹ",
+    "night": "Mưa rào nhẹ"
+  },
+  {
+    "code": 1243,
+    "day": "Mưa rào vừa hoặc to",
+    "night": "Mưa rào vừa hoặc to"
+  },
+  {
+    "code": 1246,
+    "day": "Mưa rào như trút",
+    "night": "Mưa rào như trút"
+  },
+  {
+    "code": 1249,
+    "day": "Mưa tuyết rào nhẹ",
+    "night": "Mưa tuyết rào nhẹ"
+  },
+  {
+    "code": 1252,
+    "day": "Mưa tuyết rào vừa hoặc to",
+    "night": "Mưa tuyết rào vừa hoặc to"
+  },
+  {
+    "code": 1255,
+    "day": "Tuyết rào nhẹ",
+    "night": "Tuyết rào nhẹ"
+  },
+  {
+    "code": 1258,
+    "day": "Tuyết rào vừa hoặc dày",
+    "night": "Tuyết rào vừa hoặc dày"
+  },
+  {
+    "code": 1261,
+    "day": "Mưa đá nhẹ",
+    "night": "Mưa đá nhẹ"
+  },
+  {
+    "code": 1264,
+    "day": "Mưa đá vừa hoặc nặng",
+    "night": "Mưa đá vừa hoặc nặng"
+  },
+  {
+    "code": 1273,
+    "day": "Mưa nhẹ kèm sấm",
+    "night": "Mưa nhẹ kèm sấm"
+  },
+  {
+    "code": 1276,
+    "day": "Mưa to kèm sấm",
+    "night": "Mưa to kèm sấm"
+  },
+  {
+    "code": 1279,
+    "day": "Tuyết nhẹ kèm sấm",
+    "night": "Tuyết nhẹ kèm sấm"
+  },
+  {
+    "code": 1282,
+    "day": "Tuyết to kèm sấm",
+    "night": "Tuyết to kèm sấm"
+  }
+]

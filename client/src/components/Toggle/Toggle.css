@@ -1,0 +1,51 @@
+.toggle-container {
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border-radius: 999px;
+  display: flex;
+  /* nằm ngang  */
+  align-items: center;
+  /* căn giữa chiều dọc  */
+  justify-content: space-between;
+  /* cách đều ngang  */
+  padding: 2px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--tim1);
+  /* top: 2px; */
+  transition: 0.3s ease;
+  /* z-index: 1; */
+  transform: translateX(0);
+}
+
+.circle.to-c {
+  transform: translateX(40px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.to-f {
+  transform: translateX(0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
