@@ -1,6 +1,22 @@
 :root {
+  --height-header: 60px;
+  --khoang-cach-cua-firstItem: calc(30px + var(--height-header));
+
   --primary: black;
-  --tim1: #b074e6;
+  --mau-dam: var(--mau-dam1);
+  --mau-dam2: #b074e6;
+  --mau-dam1: #6c57be;
+  --mau-dam3: #551a8b;
+  --mau-tb1: #8774e0;
+  --mau-tb2: #9678d7;
+  --mau-nhe1: #9686d8;
+  --mau-nhe2: #9f84cf;
+  --mau-nhat1: #b1a7e4;
+  --mau-nhat2: #a793db;
+  --mau-nhat3: #dad6fa;
+  --body-color: linear-gradient(225deg, #cdc7fa 0%, #ffffff 100%);
+  --info-wind-title-bg-color: var(--mau-dam);
+  --info-wind-value-bg-color: var(--mau-nhat1);
 }
 
 html {
@@ -11,6 +27,9 @@ body {
   font-family: "Calibri", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  background: var(--body-color);
+  /* padding: 0 2%; */
+  /* padding trái pải  */
 }
 
 /* cho tất cả các phần tử trên trang. */
@@ -19,4 +38,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* tính luôn cả nội dung + padding + border. */
+}
+
+a {
+  text-decoration: none;
 }

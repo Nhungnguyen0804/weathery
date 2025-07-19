@@ -11,6 +11,11 @@
   /* cách đều ngang  */
   padding: 2px;
   position: relative;
+  /*  */
+  user-select: none;
+  cursor: pointer;
+  /* shadow text  */
+  text-shadow: none;
 }
 
 .circle {
@@ -18,7 +23,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--tim1);
+  background-color: var(--mau-dam);
   /* top: 2px; */
   transition: 0.3s ease;
   /* z-index: 1; */
@@ -41,7 +46,9 @@
   justify-content: center;
 }
 
-.toggle {
+.toggle-f,
+.toggle-c {
+  color: black;
   width: 36px;
   height: 36px;
   border-radius: 50%;

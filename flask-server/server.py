@@ -12,11 +12,21 @@ CORS(app)
 API_KEY = os.getenv("WEATHER_API_KEY")
 print(API_KEY)
 # lay tham số động 
-@app.route('/api/weather/<country>')
-def get_weather(country):
-    url = f"http://api.weatherapi.com/v1/current.json?key={API_KEY}&q={country}"
+# cái link forecast.json =current.json + forecast
+@app.route('/api/forecast/<country>')
+def get_forecast(country):
+    # Thời tiết hiện tại 
+    url = f"http://api.weatherapi.com/v1/forecast.json?key={API_KEY}&q={country}&days=7"
     response = requests.get(url)
     return jsonify(response.json())
+
+# @app.route('/api/forecast/<country>')
+# def get_forecast(country):
+#     # Thời tiết hiện tại 
+#     url = f"http://api.weatherapi.com/v1/forecast.json?key={API_KEY}&q={country}&days=7"
+#     response = requests.get(url)
+#     return jsonify(response.json())
+
 
 if __name__ == "__main__":
     app.run(debug=True)

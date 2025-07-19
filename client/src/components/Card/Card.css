@@ -1,22 +1,35 @@
 .card-base {
   /* background-color: transparent; */
-  width: 95%;
-  border-radius: 49px;
-  margin: 30px;
-  padding: 39px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-shadow: 1px 1px 0 #b777ee;
+  background: white;
+
+  border-radius: 10%;
 }
 
-/* .card-base:hover {
-  transform: translateY(-4px);
-} */
+.card-base:hover {
+  /* transform: translateY(-4px); */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
-.mainCard {
+.currentCard {
+  /* độ dài main card  */
+  width: 90%;
+  /* flex: 4; */
   display: flex;
   justify-content: space-between;
+  margin: 60px 60px;
+
+  margin-top: var(--khoang-cach-cua-firstItem);
+  padding: 39px;
+  border-radius: 49px;
 }
 
-.mainCard-location {
-  background-color: var(--tim1);
+.currentCard-location {
+  background-color: var(--mau-dam);
   font-weight: bold;
   font-family: "Calibri";
 
@@ -25,16 +38,17 @@
   display: inline-block;
 }
 
-.cardItem-value {
+/* .cardItem-value {
   padding-left: 5px;
-}
+} */
 
-.mainCard-nhietDo {
+.currentCard-nhietDo {
   font-family: "Impact Black";
   font-size: 150px;
+  text-shadow: 4px 3px 0 #814eae;
 }
 
-.mainCard-date {
+.currentCard-date {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -43,16 +57,183 @@
   line-height: 1;
 }
 
-.mainCard-date-week {
+.currentCard-date-week {
   font-size: 80px;
   font-family: "Candara Black";
+  text-shadow: 4px 3px 0 #814eae;
 }
 
-.mainCard-date-today {
+.currentCard-date-today {
   padding-left: 10px;
 }
-.mainCard-right {
+.currentCard-right {
   display: flex;
   flex-direction: column;
   align-items: end;
+  justify-items: center;
+}
+.currentCard-iconArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currentCard-text {
+  font-size: 30px;
+  /* animation: textMove infinite 3s ease-in-out; */
+  font-weight: bold; /* In đậm */
+  font-style: italic; /* In nghiêng */
+}
+.currentCard-icon {
+  animation: iconMoveLoop infinite 3s ease-in-out;
+}
+
+@keyframes iconMoveLoop {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.infoCard {
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+.currentCard .cardItem {
+  background-color: transparent;
+}
+.cardItem {
+  border-radius: 20px;
+  /* background-color: green; */
+}
+
+.infoCard .cardItem {
+  padding: 15px 0;
+  margin: 20px;
+}
+
+.infoCard-left {
+  /* align-items: start; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoCard-right {
+  /* align-items: flex-start; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardDetail-wrapper {
+  background-color: var(--info-wind-title-bg-color);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cardDetail-wrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cardDetail-item {
+  display: flex;
+  justify-content: center;
+  background-color: var(--info-wind-value-bg-color);
+  border-radius: 15px;
+}
+.cardDetail-item .cardItem {
+  flex: 1;
+  margin: 10px;
+  border-radius: 8px;
+}
+.divider-ngang {
+  height: 1px;
+  margin: 10px 0;
+  background-color: var(--mau-dam);
+  box-shadow: var(--mau-dam) 0px 1px 2px, var(--mau-dam) 0px 1px 2px;
+}
+
+/* CARD ITEM  */
+.cardItem-wrapper {
+  display: flex;
+  align-items: center;
+}
+/* .cardItem-text .type3 {
+  display: flex;
+  flex-direction: column;
+} */
+
+.cardItem-icon {
+  color: var(--mau-dam);
+  margin-right: 10px;
+}
+
+.wind-direct {
+  display: flex;
+  align-items: normal;
+}
+.wind-direct .cardItem-value {
+  font-size: 19px;
+}
+.infoCard .cardItem .cardItem-text {
+  font-size: 20px;
+}
+
+/* location card  */
+
+/*  */
+.locationCard {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  flex: 1;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.locationCard-location,
+.locationCard-info {
+  flex: 1;
+}
+
+.locationCard .cardItem {
+  margin: 15px 0;
+  padding: 5px 20px;
+}
+.locationCard .cardItem .cardItem-value {
+  /* font-size: 40px; */
+  text-shadow: none;
+  font-family: "Brush Script MT";
+  font-size: 25px;
+}
+
+/* img card ============================  */
+
+.imgCard {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  padding: 20px;
 }

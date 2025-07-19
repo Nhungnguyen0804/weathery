@@ -1,10 +1,115 @@
 .today-wrapper {
-  display: flex;
-  align-items: center;
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
+
+  /* align-items: center; */
   font-size: 2rem;
 
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 
   /* padding-bottom: 0.5rem; */
+  /* margin: 20px; */
+}
+
+.today-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 1px; /* chiều rộng của đường phân cách = độ dày */
+  /* margin: 0 10px; */
+  background-color: var(--mau-dam);
+  box-shadow: var(--mau-dam) 0px 1px 2px, var(--mau-dam) 0px 1px 2px;
+}
+
+.today-info-title {
+  font-family: "Monsterat";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+
+  color: var(--mau-dam);
+  font-size: 50px;
+  padding-left: 70px;
+  display: flex;
+  position: relative;
+}
+
+/* ==================  */
+/* ong  */
+.today-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* grid card  */
+
+/* cha  */
+.today-detail-gridContainer {
+  width: 90%;
+  height: 100%;
+  min-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  /* chia grid thành các cột  */
+
+  grid-template-rows: 1fr 1fr 1fr;
+  /* chia thành hàng  */
+
+  grid-template-areas:
+    "location sun1 sun2 info2"
+    "location sun3 sun4 info2"
+    "info1 info1 info1 info2";
+
+  gap: 20px;
+  /* khoảng cách ô lưới  */
+
+  /* background-color: darksalmon; */
+
+  padding: 0 10px 50px 10px;
+}
+
+/* con  */
+.gridLocation {
+  grid-area: location;
+  background-color: red;
+}
+
+.gridSunset1 {
+  grid-area: sun1;
+  /* background-color: green; */
+}
+
+.gridSunset2 {
+  grid-area: sun2;
+  /* background-color: blue; */
+}
+
+.gridSunset3 {
+  grid-area: sun3;
+  /* background-color: var(--mau-dam); */
+}
+
+.gridSunset4 {
+  grid-area: sun4;
+  /* background-color: var(--mau-tb1); */
+}
+
+.gridInfo2 {
+  grid-area: info2;
+  background-color: aquamarine;
+}
+
+.gridInfo1 {
+  grid-area: info1;
+  background-color: blanchedalmond;
+}
+
+/* main card  */
+
+.currentCard-wrapper {
+  display: flex;
+  justify-content: center; /* truc x */
 }

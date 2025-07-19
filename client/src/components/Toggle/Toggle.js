@@ -14,8 +14,8 @@ function Toggle({ onChange }) {
   let res = isC ? "C" : "F";
   return (
     <div className="toggle-container" onClick={handleToggle}>
-      <div className={`toggle`}>F</div>
-      <div className={`toggle`}>C</div>
+      <div className={`toggle-f`}>F</div>
+      <div className={`toggle-c`}>C</div>
 
       <div className={`circle ${isC ? "to-c" : "to-f"}`}>{res}</div>
     </div>
