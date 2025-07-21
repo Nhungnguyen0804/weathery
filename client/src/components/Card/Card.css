@@ -100,17 +100,6 @@
   }
 }
 
-.infoCard {
-  border-radius: 20px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex: 4;
-  display: flex;
-  justify-content: center;
-
-  padding: 10px;
-}
-
 .currentCard .cardItem {
   background-color: transparent;
 }
@@ -119,26 +108,6 @@
   /* background-color: green; */
 }
 
-.infoCard .cardItem {
-  padding: 15px 0;
-  margin: 20px;
-}
-
-.infoCard-left {
-  /* align-items: start; */
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.infoCard-right {
-  /* align-items: flex-start; */
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .cardDetail-wrapper {
   background-color: var(--info-wind-title-bg-color);
   margin: 20px;
@@ -173,10 +142,6 @@
   display: flex;
   align-items: center;
 }
-/* .cardItem-text .type3 {
-  display: flex;
-  flex-direction: column;
-} */
 
 .cardItem-icon {
   color: var(--mau-dam);
@@ -190,42 +155,32 @@
 .wind-direct .cardItem-value {
   font-size: 19px;
 }
-.infoCard .cardItem .cardItem-text {
-  font-size: 20px;
-}
 
 /* location card  */
 
 /*  */
-.locationCard {
-  flex: 1;
-
+/* .locationCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  flex: 1;
+
   padding: 20px;
-  border-radius: 25px;
-}
+  border-radius: 25px; */
 
-.locationCard-location,
-.locationCard-info {
-  flex: 1;
-}
+/* cha, nền đỏ  */
+/* height: 100%; */
+/* } */
 
-.locationCard .cardItem {
-  margin: 15px 0;
-  padding: 5px 20px;
-}
-.locationCard .cardItem .cardItem-value {
-  /* font-size: 40px; */
-  text-shadow: none;
-  font-family: "Brush Script MT";
-  font-size: 25px;
-}
+/* .locationCard .cardItem { */
+/* margin: 15px 0; */
+/* padding: 5px 20px; */
+/* } */
+/* .locationCard .cardItem .cardItem-value { */
+/* font-size: 40px; */
+/* text-shadow: none; */
+/* font-family: "Brush Script MT"; */
+/* font-size: 25px; */
+/* } */
 
 /* img card ============================  */
 
@@ -237,3 +192,97 @@
 
   padding: 20px;
 }
+
+/* class dành riêng cho card vuông  */
+.imgCard-square {
+  aspect-ratio: 1 / 1;
+  /* hình vuông */
+}
+
+/* location card ========================================  */
+/* cha  */
+.locationCard {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  justify-content: space-between;
+
+  padding: 30px 20px 20px 20px;
+  border-radius: 25px;
+}
+
+/* info card =================================  */
+
+.infoCard {
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 20px;
+}
+
+.infoCard-ListCardItem {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  top: 20px; /* giảm độ cao xuống đè nền */
+
+  padding: 0 50px;
+}
+/* value card item all card ======================  */
+.cardItem-value {
+  font-size: 30px;
+  text-shadow: none;
+  font-family: "Brush Script MT";
+}
+
+/*
+
+
+.infoCard {
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+
+.infoCard .cardItem {
+  padding: 15px 0;
+  margin: 20px;
+}
+
+.infoCard-left {
+  align-items: start; //x
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoCard-right {
+  align-items: flex-start; //x
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infoCard .cardItem .cardItem-text {
+  font-size: 20px;
+}
+
+
+
+*/

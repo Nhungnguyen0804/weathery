@@ -74,7 +74,7 @@
 /* con  */
 .gridLocation {
   grid-area: location;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .gridSunset1 {
@@ -104,7 +104,7 @@
 
 .gridInfo1 {
   grid-area: info1;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
 }
 
 /* main card  */

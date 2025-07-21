@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 import { LocationIcon } from "../Icon/Icon";
 import { getWeek } from "../LocalTime/LocalTime";
 import RealTime from "../RealTime/RealTime";
-import getWeatherType from "../Icon/getWeatherType";
+import getWeatherType from "./getWeatherType";
 import WeatherBackground from "../Icon/WeatherBackground";
 import IconComponents from "../Icon/IconComponent";
-// console.log(vieCode);
+
 function CurrentCard({ location, current }) {
   const country = location.country;
   const city = location.name;
@@ -22,8 +22,6 @@ function CurrentCard({ location, current }) {
   let code = current.condition.code;
 
   let isDay = current.is_day;
-
-  code = 1000;
 
   // vieCode là mảng
   const item = vieCode.find((item) => item.code === code);

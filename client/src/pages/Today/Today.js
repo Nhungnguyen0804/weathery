@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import CurrentCard from "../../components/Card/CurrentCard";
 import "./Today.css";
 import images from "../../assets/images/images";
-
+import fallbackData from "../../assets/fallback.json";
 import ImgCard from "../../components/Card/ImgCard";
+import LocationCard from "../../components/Card/LocationCard";
+import InfoCard from "../../components/Card/InfoCard";
+
 function Today() {
   const [currentWeather, setCurrentWeather] = useState();
   //   useEffect(useCallback, []);
@@ -15,6 +18,12 @@ function Today() {
         console.log(res);
         // thay vi consolog thi setState
         setCurrentWeather(res);
+      })
+      .catch((error) => {
+        console.error("Lỗi fetch API:", error);
+        // Fallback: sử dụng dữ liệu đã import
+        console.log("Dữ liệu fallback:", fallbackData);
+        setCurrentWeather(fallbackData);
       });
   }, []);
   // co the currentWeather undefined khi render lần đầu do chưa fetch
@@ -54,12 +63,15 @@ function Today() {
               Weather Today Detail
             </div>
             <div className="today-detail-gridContainer">
-              <div className="today-detail-gridItem gridLocation">location</div>
+              <div className="today-detail-gridItem gridLocation">
+                <LocationCard location={location} current={current} />
+              </div>
               <div className="today-detail-gridItem gridSunset1">
                 <ImgCard
                   label="Sunrise"
                   value={astro.sunrise}
                   background={images.sunriseBackground}
+                  type="squareCard"
                 />
               </div>
               <div className="today-detail-gridItem gridSunset2">
@@ -67,6 +79,7 @@ function Today() {
                   label="Sunset"
                   value={astro.sunset}
                   background={images.sunsetBackground}
+                  type="squareCard"
                 />
               </div>
               <div className="today-detail-gridItem gridInfo2">info2</div>
@@ -75,6 +88,7 @@ function Today() {
                   label="Moonrise"
                   value={astro.moonrise}
                   background={images.moonriseBackground}
+                  type="squareCard"
                 />
               </div>
               <div className="today-detail-gridItem gridSunset4">
@@ -82,10 +96,13 @@ function Today() {
                   label="Moonset"
                   value={astro.moonset}
                   background={images.moonsetBackground}
+                  type="squareCard"
                 />
               </div>
 
-              <div className="today-detail-gridItem gridInfo1">info1</div>
+              <div className="today-detail-gridItem gridInfo1">
+                <InfoCard current={current} />
+              </div>
             </div>
           </div>
           {/* <div className="today-info-title">

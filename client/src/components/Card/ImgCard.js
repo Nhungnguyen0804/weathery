@@ -4,16 +4,15 @@ import Card from "./Card";
 // className : sunrise sunset moonrise moonset
 
 import images from "../../assets/images/images";
-function ImgCard({ label, value, className, background }) {
+function ImgCard({ label, value, className, background, type }) {
+  let classSquare = "";
+  type === "squareCard" ? (classSquare = "imgCard-square") : (classSquare = "");
   return (
     <Card
-      className={`imgCard ${className}`}
+      className={`imgCard ${classSquare} ${className}`}
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
-        width: "100%",
-        aspectRatio: "1 / 1",
-        // hình vuông
       }}
     >
       <div style={{ fontSize: "25px", paddingLeft: "5px" }}>{label}</div>
