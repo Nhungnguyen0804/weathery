@@ -1,5 +1,5 @@
 import Header from "./Header/Header";
-import Today from "../../pages/Today/Today";
+
 function DefaultLayout({ children }) {
   return (
     <div>

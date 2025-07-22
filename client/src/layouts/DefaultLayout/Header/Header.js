@@ -1,6 +1,5 @@
 import "./Header.css";
 import images from "../../../assets/images/images";
-import Button from "../../../components/Button/Button";
 import Navbar from "./Navbar/Navbar";
 
 function Header() {

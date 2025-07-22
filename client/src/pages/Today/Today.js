@@ -6,6 +6,7 @@ import fallbackData from "../../assets/fallback.json";
 import ImgCard from "../../components/Card/ImgCard";
 import LocationCard from "../../components/Card/LocationCard";
 import InfoCard from "../../components/Card/InfoCard";
+import DetailCard from "../../components/Card/DetailCard";
 
 function Today() {
   const [currentWeather, setCurrentWeather] = useState();
@@ -15,7 +16,7 @@ function Today() {
     fetch(`http://127.0.0.1:5000/api/forecast/${country}`)
       .then((response) => response.json())
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         // thay vi consolog thi setState
         setCurrentWeather(res);
       })
@@ -60,7 +61,7 @@ function Today() {
                 color: "white",
               }}
             >
-              Weather Today Detail
+              Today's Weather Details
             </div>
             <div className="today-detail-gridContainer">
               <div className="today-detail-gridItem gridLocation">
@@ -82,7 +83,9 @@ function Today() {
                   type="squareCard"
                 />
               </div>
-              <div className="today-detail-gridItem gridInfo2">info2</div>
+              <div className="today-detail-gridItem gridInfo2">
+                <DetailCard current={current} />
+              </div>
               <div className="today-detail-gridItem gridSunset3">
                 <ImgCard
                   label="Moonrise"

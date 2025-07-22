@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Fragment } from "react/jsx-runtime";
-//
-import CurrentWeather from "./CurrentWeather";
-//
 
-import Home from "./pages/Home/Home";
 import { publicRoutes } from "./routes/routes";
 import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
 

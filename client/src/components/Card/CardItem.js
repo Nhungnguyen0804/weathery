@@ -26,18 +26,18 @@ function CardItem({
   type = "row",
 }) {
   return (
-    <div className={`cardItem`}>
-      <div className={`cardItem-wrapper ${className}`}>
-        {icon && <span className="cardItem-icon">{icon}</span>}
-        <div className="cardItem-text">
-          {type === "row" && label && <span>{label}</span>}
-          {type === "column" && label && (
-            <span style={{ display: "block", fontSize: "15px" }}>{label}</span>
-          )}
+    <div className={`cardItem ${className}`}>
+      {icon && <span className="cardItem-icon">{icon}</span>}
 
-          {/* --- */}
-          <span className="cardItem-value">{value}</span>
-        </div>
+      {/* text  */}
+      <div className="cardItem-text">
+        {type === "row" && label && <span>{label}</span>}
+        {type === "column" && label && (
+          <span style={{ display: "block", fontSize: "15px" }}>{label}</span>
+        )}
+
+        {/* --- */}
+        <span className="cardItem-value">{value}</span>
       </div>
     </div>
   );

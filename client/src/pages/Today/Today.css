@@ -99,7 +99,7 @@
 
 .gridInfo2 {
   grid-area: info2;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .gridInfo1 {

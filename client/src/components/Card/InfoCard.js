@@ -5,25 +5,6 @@ import { ImageIcon, DoAmIcon, CloudIcon, CloudBgSVG } from "../Icon/Icon";
 import images from "../../assets/images/images";
 
 function InfoCard({ current }) {
-  const windDirect = {
-    N: "Gió từ Bắc",
-    NE: "Gió từ Đông Bắc",
-    E: "Gió từ Đông",
-    SE: "Gió từ Đông Nam",
-    S: "Gió từ Nam",
-    SW: "Gió từ Tây Nam",
-    W: "Gió từ Tây",
-    NW: "Gió từ Tây Bắc",
-    NNE: "Gió từ Bắc - Đông Bắc",
-    ENE: "Gió từ Đông - Đông Bắc",
-    ESE: "Gió từ Đông - Đông Nam",
-    SSE: "Gió từ Nam - Đông Nam",
-    SSW: "Gió từ Nam - Tây Nam",
-    WSW: "Gió từ Tây - Tây Nam",
-    WNW: "Gió từ Tây - Tây Bắc",
-    NNW: "Gió từ Bắc - Tây Bắc",
-  };
-
   let w = "35px";
   let h = "35px";
   return (

@@ -378,7 +378,7 @@ export const MayItDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3_2485"
@@ -400,7 +400,7 @@ export const MayItDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
       </defs>
     </svg>
@@ -766,7 +766,7 @@ export const MayItNight = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3_2437"
@@ -777,7 +777,7 @@ export const MayItNight = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3_2437"
@@ -958,7 +958,7 @@ export const MayNhieuDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.80" />
+          <stop offset="1" stopColor="white" stopOpacity="0.80" />
         </linearGradient>
       </defs>
     </svg>
@@ -1139,7 +1139,7 @@ export const MayNhieuNight = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3_2468"
@@ -1161,7 +1161,7 @@ export const MayNhieuNight = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
       </defs>
     </svg>
@@ -1504,7 +1504,7 @@ export const MuaNangDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
       </defs>
     </svg>
@@ -1863,7 +1863,7 @@ export const MuaNangNight = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
       </defs>
     </svg>
@@ -2136,7 +2136,7 @@ export const MuaDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
       </defs>
     </svg>
@@ -2460,8 +2460,8 @@ export const DongDay = ({
           gradientTransform="translate(53.2327 217.732) rotate(56.2052) scale(33.8009 9.8486)"
         >
           <stop stopColor="white" />
-          <stop offset="0.555017" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.555017" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_1_16"
@@ -2472,8 +2472,8 @@ export const DongDay = ({
           gradientTransform="translate(38.1063 243.901) rotate(49.9414) scale(18.5069 8.98477)"
         >
           <stop stopColor="white" />
-          <stop offset="0.673987" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.673987" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_1_16"
@@ -2508,8 +2508,8 @@ export const DongDay = ({
           gradientTransform="translate(203.591 217.732) rotate(56.2052) scale(33.8009 9.8486)"
         >
           <stop stopColor="white" />
-          <stop offset="0.555017" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.555017" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_1_16"
@@ -2520,8 +2520,8 @@ export const DongDay = ({
           gradientTransform="translate(188.465 243.901) rotate(49.9414) scale(18.5069 8.98477)"
         >
           <stop stopColor="white" />
-          <stop offset="0.673987" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.673987" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint9_linear_1_16"
@@ -2821,8 +2821,8 @@ export const DongNight = ({
           gradientTransform="translate(53.2327 196.732) rotate(56.2052) scale(33.8009 9.8486)"
         >
           <stop stopColor="white" />
-          <stop offset="0.555017" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.555017" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_1_16"
@@ -2833,8 +2833,8 @@ export const DongNight = ({
           gradientTransform="translate(38.1063 222.901) rotate(49.9414) scale(18.5069 8.98477)"
         >
           <stop stopColor="white" />
-          <stop offset="0.673987" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.673987" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_1_16"
@@ -2869,8 +2869,8 @@ export const DongNight = ({
           gradientTransform="translate(203.591 196.732) rotate(56.2052) scale(33.8009 9.8486)"
         >
           <stop stopColor="white" />
-          <stop offset="0.555017" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.555017" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_1_16"
@@ -2881,8 +2881,8 @@ export const DongNight = ({
           gradientTransform="translate(188.465 222.901) rotate(49.9414) scale(18.5069 8.98477)"
         >
           <stop stopColor="white" />
-          <stop offset="0.673987" stopColor="#BDDBF1" stop-opacity="0.25" />
-          <stop offset="1" stopColor="#5686F5" stop-opacity="0" />
+          <stop offset="0.673987" stopColor="#BDDBF1" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#5686F5" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint9_linear_1_16"
@@ -3006,7 +3006,7 @@ export const SuongDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="0.58" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_17_2632"
@@ -3017,7 +3017,7 @@ export const SuongDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
       </defs>
     </svg>
@@ -3102,7 +3102,7 @@ export const TuyetDay = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stop-opacity="1" />
+          <stop offset="1" stopColor="white" stopOpacity="1" />
         </linearGradient>
         <image
           id="image0_13_2625"
@@ -3146,9 +3146,9 @@ export const Cloud = ({
           width="224"
           height="128"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -3182,8 +3182,8 @@ export const Cloud = ({
           y2="-66.1627"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.58" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.58" />
         </linearGradient>
       </defs>
     </svg>

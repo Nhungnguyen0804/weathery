@@ -2,8 +2,7 @@ import "./Card.css";
 import Card from "./Card";
 import CardItem from "./CardItem";
 import images from "../../assets/images/images";
-import { ImageIcon, ToaDoIcon, DoAmIcon, CloudIcon } from "../Icon/Icon";
-import ImgCard from "./ImgCard";
+import { ImageIcon, ToaDoIcon } from "../Icon/Icon";
 function LocationCard({ location, current }) {
   let width = "32px";
   let height = "32px";

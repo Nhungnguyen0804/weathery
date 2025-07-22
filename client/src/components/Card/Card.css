@@ -15,6 +15,7 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+/* current card ======================================================= */
 .currentCard {
   /* độ dài main card  */
   width: 90%;
@@ -31,16 +32,12 @@
 .currentCard-location {
   background-color: var(--mau-dam);
   font-weight: bold;
-  font-family: "Calibri";
+  font-family: "Calibri" !important;
 
   padding: 5px 15px;
   border-radius: 999px;
   display: inline-block;
 }
-
-/* .cardItem-value {
-  padding-left: 5px;
-} */
 
 .currentCard-nhietDo {
   font-family: "Impact Black";
@@ -103,84 +100,6 @@
 .currentCard .cardItem {
   background-color: transparent;
 }
-.cardItem {
-  border-radius: 20px;
-  /* background-color: green; */
-}
-
-.cardDetail-wrapper {
-  background-color: var(--info-wind-title-bg-color);
-  margin: 20px;
-  padding: 10px;
-  border-radius: 18px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.cardDetail-wrapper:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.cardDetail-item {
-  display: flex;
-  justify-content: center;
-  background-color: var(--info-wind-value-bg-color);
-  border-radius: 15px;
-}
-.cardDetail-item .cardItem {
-  flex: 1;
-  margin: 10px;
-  border-radius: 8px;
-}
-.divider-ngang {
-  height: 1px;
-  margin: 10px 0;
-  background-color: var(--mau-dam);
-  box-shadow: var(--mau-dam) 0px 1px 2px, var(--mau-dam) 0px 1px 2px;
-}
-
-/* CARD ITEM  */
-.cardItem-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.cardItem-icon {
-  color: var(--mau-dam);
-  margin-right: 10px;
-}
-
-.wind-direct {
-  display: flex;
-  align-items: normal;
-}
-.wind-direct .cardItem-value {
-  font-size: 19px;
-}
-
-/* location card  */
-
-/*  */
-/* .locationCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 20px;
-  border-radius: 25px; */
-
-/* cha, nền đỏ  */
-/* height: 100%; */
-/* } */
-
-/* .locationCard .cardItem { */
-/* margin: 15px 0; */
-/* padding: 5px 20px; */
-/* } */
-/* .locationCard .cardItem .cardItem-value { */
-/* font-size: 40px; */
-/* text-shadow: none; */
-/* font-family: "Brush Script MT"; */
-/* font-size: 25px; */
-/* } */
 
 /* img card ============================  */
 
@@ -225,6 +144,7 @@
   flex-direction: column;
   justify-content: space-between;
 
+  /* goc xau qua pai css rieng  */
   border-radius: 20px;
 }
 
@@ -237,52 +157,59 @@
 
   padding: 0 50px;
 }
+
+/* detail card =====================================  */
+
+.detailCard {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* goc xau, css rieng  */
+  border-radius: 25px;
+}
+
+/* css: carditem        carditem  */
+.detailCard-groupCardItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--mau-nhat3);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.detailCard .cardItem-value {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Monsterrat";
+}
+
+/* CARD ITEM  */
+/* card item ===================================== */
+
+.cardItem {
+  display: flex;
+  align-items: center;
+}
+
+/* card item : icon  */
+.cardItem-icon {
+  color: var(--mau-dam);
+  margin-right: 10px;
+}
+
 /* value card item all card ======================  */
 .cardItem-value {
+  text-shadow: none;
+}
+
+.locationCard .cardItem-value,
+.infoCard .cardItem-value {
   font-size: 30px;
   text-shadow: none;
   font-family: "Brush Script MT";
 }
-
-/*
-
-
-.infoCard {
-  border-radius: 20px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex: 4;
-  display: flex;
-  justify-content: center;
-
-  padding: 10px;
-}
-
-
-.infoCard .cardItem {
-  padding: 15px 0;
-  margin: 20px;
-}
-
-.infoCard-left {
-  align-items: start; //x
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.infoCard-right {
-  align-items: flex-start; //x
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.infoCard .cardItem .cardItem-text {
-  font-size: 20px;
-}
-
-
-
-*/

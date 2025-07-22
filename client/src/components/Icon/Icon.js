@@ -1,3 +1,14 @@
+export const ImageIcon = ({
+  src,
+  width = "32px",
+  height = "32px",
+  className,
+}) => {
+  return (
+    <img src={src} height={height} width={width} className={className} alt="" />
+  );
+};
+
 // // hàm arrow TodayIcon
 // export const TodayIcon = ({
 //   width = "3.2rem",
@@ -5,12 +16,7 @@
 //   className,
 // }) => {<svg></svg>};
 
-export const LocationIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const LocationIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -35,23 +41,7 @@ export const CardIcon = ({
   );
 };
 
-export const ImageIcon = ({
-  src,
-  width = "32px",
-  height = "32px",
-  className,
-}) => {
-  return (
-    <img src={src} height={height} width={width} className={className} alt="" />
-  );
-};
-
-export const ToaDoIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const ToaDoIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -65,12 +55,7 @@ export const ToaDoIcon = ({
   );
 };
 
-export const DoAmIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const DoAmIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -84,12 +69,7 @@ export const DoAmIcon = ({
   );
 };
 
-export const CloudIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const CloudIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -103,12 +83,7 @@ export const CloudIcon = ({
   );
 };
 
-export const WindIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const WindIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -121,12 +96,7 @@ export const WindIcon = ({
     </svg>
   );
 };
-export const RainMesureIcon = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const RainMesureIcon = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -189,15 +159,29 @@ export const CloudBgSVG = () => {
         <path
           d="M370.438 195.472C385.859 161.044 470.707 97.1555 686.733 117.022C956.764 141.855 1140.81 233.285 1439 99.5259"
           stroke="white"
-          stroke-width="3.2"
-          stroke-linecap="round"
-          stroke-dasharray="0.8 10.4"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          strokeDasharray="0.8 10.4"
         />
       </g>
     </svg>
   );
 };
 
-// width={width}
-// height={height}
-//       fill="currentColor"
+export const CompassIconSVG = ({
+  width = "2rem",
+  height = "2rem",
+  fill = "currentColor",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      fill={fill}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 640 640"
+    >
+      <path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM370.7 389.1L226.4 444.6C207 452.1 187.9 433 195.4 413.6L250.9 269.3C254.2 260.8 260.8 254.2 269.3 250.9L413.6 195.4C433 187.9 452.1 207 444.6 226.4L389.1 370.7C385.9 379.2 379.2 385.8 370.7 389.1zM352 320C352 302.3 337.7 288 320 288C302.3 288 288 302.3 288 320C288 337.7 302.3 352 320 352C337.7 352 352 337.7 352 320z" />
+    </svg>
+  );
+};

@@ -3,7 +3,6 @@ import Card from "./Card";
 // obj forecast trong json
 // className : sunrise sunset moonrise moonset
 
-import images from "../../assets/images/images";
 function ImgCard({ label, value, className, background, type }) {
   let classSquare = "";
   type === "squareCard" ? (classSquare = "imgCard-square") : (classSquare = "");

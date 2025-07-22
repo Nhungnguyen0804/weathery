@@ -12,17 +12,6 @@ const images = {
   clearNight: require("./card/trong0.gif"),
   clearDay: require("./card/trong1.gif"),
 
-  iconRainNight: require("./iconCard/mua0.gif"),
-  iconRainDay: require("./iconCard/mua1.gif"),
-  iconSnowNight: require("./iconCard/snow0.gif"),
-  iconSnowDay: require("./iconCard/snow1.gif"),
-  iconSuongNight: require("./iconCard/suong0.gif"),
-  iconSuongDay: require("./iconCard/suong1.gif"),
-  iconMayNight: require("./iconCard/may0.gif"),
-  iconMayDay: require("./iconCard/may1.gif"),
-  iconClearNight: require("./iconCard/trong0.gif"),
-  iconClearDay: require("./iconCard/trong1.png"),
-
   timezoneIcon: require("./timezone.png"),
   uvIcon: require("./uv.png"),
 
