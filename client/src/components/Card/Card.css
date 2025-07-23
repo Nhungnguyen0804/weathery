@@ -100,7 +100,9 @@
 .currentCard .cardItem {
   background-color: transparent;
 }
-
+.currentCard .cardItem-value {
+  text-shadow: 1px 1px 0 #b777ee;
+}
 /* img card ============================  */
 
 .imgCard {
@@ -212,4 +214,23 @@
   font-size: 30px;
   text-shadow: none;
   font-family: "Brush Script MT";
+}
+
+/* hour card ==========================  */
+.hourCard {
+  width: 23%;
+  min-width: 320px;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mau-nhat3);
+  border-radius: 20px;
+}
+.hourCard:hover {
+  background-color: var(--mau-nhat1);
+  transform: scale(1.05);
 }

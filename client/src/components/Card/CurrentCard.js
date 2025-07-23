@@ -1,5 +1,5 @@
 import "./Card.css";
-import vieCode from "./code.json";
+import vieCode from "../../assets/data/code.json";
 import Card from "./Card";
 import CardItem from "./CardItem";
 import Toggle from "../Toggle/Toggle";
@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { LocationIcon } from "../Icon/Icon";
 import { getWeek } from "../LocalTime/LocalTime";
 import RealTime from "../RealTime/RealTime";
-import getWeatherType from "./getWeatherType";
+import getWeatherType from "../../assets/data/getWeatherType";
 import WeatherBackground from "../Icon/WeatherBackground";
 import IconComponents from "../Icon/IconComponent";
 
@@ -24,7 +24,7 @@ function CurrentCard({ location, current }) {
   let isDay = current.is_day;
 
   // vieCode là mảng
-  const item = vieCode.find((item) => item.code === code);
+  const text = vieCode.find((item) => item.code === code);
 
   // nhiệt độ
   const [t, setT] = useState(nhietDoC);
@@ -87,7 +87,6 @@ function CurrentCard({ location, current }) {
         <div className="currentCard-feelLike">
           <CardItem label="Feels Like: " value={t_feel} />
         </div>
-        <div className="currentCard-lastUpdate">{}</div>
       </div>
       <div className="currentCard-right">
         <div className="currentCard-btn-toggle">
@@ -98,7 +97,7 @@ function CurrentCard({ location, current }) {
             {<CodeIcon height="300px" width="300px" />}
           </div>
           <div className="currentCard-text">
-            <CardItem value={isDay ? item.day : item.night} />
+            <CardItem value={isDay ? text.day : text.night} />
           </div>
         </div>
       </div>

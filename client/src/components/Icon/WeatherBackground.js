@@ -1,5 +1,3 @@
-import weatherType from "../../assets/weatherType";
-import getWeatherType from "../Card/getWeatherType";
 import images from "../../assets/images/images";
 const WeatherBackground = {
   troiTrongDay: images.clearDay,

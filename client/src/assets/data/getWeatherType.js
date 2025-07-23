@@ -1,4 +1,4 @@
-import weatherType from "../../assets/weatherType";
+import weatherType from "./weatherType";
 
 function addToMapObj(arr, label, resObj) {
   arr.forEach((code) => {

@@ -71,7 +71,7 @@ function DetailCard({ current }) {
         />
         <CardItem
           value={`${current.gust_mph} (m/h)`}
-          icon={<WindIcon src={images.uvIcon} width={w} height={h} />}
+          icon={<WindIcon width={w} height={h} />}
           type="column"
         />
       </div>

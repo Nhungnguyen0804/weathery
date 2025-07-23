@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import CurrentCard from "../../components/Card/CurrentCard";
 import "./Today.css";
 import images from "../../assets/images/images";
-import fallbackData from "../../assets/fallback.json";
+import fallbackData from "../../assets/data/fallback.json";
 import ImgCard from "../../components/Card/ImgCard";
 import LocationCard from "../../components/Card/LocationCard";
 import InfoCard from "../../components/Card/InfoCard";
 import DetailCard from "../../components/Card/DetailCard";
+import TemperatureChart from "../../components/Chart/TemperatureChart";
+import TodayHourlyForecast from "./TodayHourlyForecast";
 
 function Today() {
   const [currentWeather, setCurrentWeather] = useState();
@@ -34,6 +36,7 @@ function Today() {
   const location = currentWeather?.location;
   const current = currentWeather?.current;
   const astro = currentWeather?.forecast?.forecastday[0].astro;
+  const todayHourlyForecast = currentWeather?.forecast?.forecastday[0];
   // console.log(astro);
   return (
     <React.Fragment>
@@ -52,13 +55,10 @@ function Today() {
             }}
           >
             <div
+              className="today-title"
               style={{
-                marginTop: "4%",
-                fontFamily: "Monsterat",
-                fontStyle: "italic",
-                fontWeight: "bold",
-                fontSize: "50px",
                 color: "white",
+                textShadow: "1px 1px 0 #b777ee",
               }}
             >
               Today's Weather Details
@@ -108,14 +108,19 @@ function Today() {
               </div>
             </div>
           </div>
-          {/* <div className="today-info-title">
-            <span className="today-info-title-text">Infomation</span>
+
+          <div>
+            <div
+              className="today-title"
+              style={{
+                color: "var(--mau-dam2)",
+              }}
+            >
+              Today's Hourly Forecast
+            </div>
+
+            <TodayHourlyForecast forecast={todayHourlyForecast} />
           </div>
-          <div className="today-info">
-            <LocationCard location={location} current={current} /> */}
-          {/* <InfoCard current={current} /> */}
-          {/* </div> */}
-          <div>Hello</div>
         </div>
       ) : (
         <p>Đang load dữ liệu </p>
