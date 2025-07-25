@@ -19,6 +19,7 @@ const images = {
   visionIcon: require("./vision.png"),
 
   bgTodayDetail: require("./bg/bg.jpg"),
+  bgForecast: require("./bg/bg1.png"),
   sunriseBackground: require("./bg/sunrise.png"),
   sunsetBackground: require("./bg/sunset.png"),
   moonriseBackground: require("./bg/moonrise.png"),

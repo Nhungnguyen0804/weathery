@@ -217,9 +217,10 @@
 }
 
 /* hour card ==========================  */
-.hourCard {
+.forecastCard {
   width: 23%;
   min-width: 320px;
+
   height: 450px;
 
   display: flex;
@@ -230,7 +231,17 @@
   background-color: var(--mau-nhat3);
   border-radius: 20px;
 }
-.hourCard:hover {
+.ForecastCard:hover {
   background-color: var(--mau-nhat1);
   transform: scale(1.05);
+}
+
+/* today hour forecast ==================================  */
+
+.forecastCardList {
+  display: flex;
+  gap: 35px;
+  overflow: auto;
+
+  padding: 20px;
 }

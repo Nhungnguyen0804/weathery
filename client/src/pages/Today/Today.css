@@ -114,16 +114,6 @@
   justify-content: center; /* truc x */
 }
 
-/* today hour forecast ==================================  */
-
-.todayHourlyForecast {
-  display: flex;
-  gap: 35px;
-  overflow: auto;
-
-  padding: 20px;
-}
-
 /* today title ===========================================  */
 .today-title {
   margin-top: 4%;

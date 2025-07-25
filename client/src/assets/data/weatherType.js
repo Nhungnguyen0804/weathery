@@ -8,21 +8,31 @@ const muaNang = [1186];
 
 const mayIt = [1003];
 const mayNhieu = [1006, 1009];
-
+const troiTrong = [1000]; // dông = mây + mưa + sét
+// mưa tuyết = mây + tuyết
+const muaTuyet = [
+  1069, 1204, 1207, 1249, 1252, 1066, 1114, 1117, 1210, 1213, 1216, 1219, 1222,
+  1225, 1255, 1258, 1279, 1282,
+];
+const suong = [1030, 1135, 1147];
 const weatherType = {
-  troiTrong: [1000], // dông = mây + mưa + sét
-
-  // mưa tuyết = mây + tuyết
-  muaTuyet: [
-    1069, 1204, 1207, 1249, 1252, 1066, 1114, 1117, 1210, 1213, 1216, 1219,
-    1222, 1225, 1255, 1258, 1279, 1282,
-  ],
-  suong: [1030, 1135, 1147],
+  troiTrong,
+  muaTuyet,
+  suong,
   dong,
   mua,
   muaNang,
   mayIt,
   mayNhieu,
+  all: [
+    ...dong,
+    ...mua,
+    ...muaNang,
+    ...mayIt,
+    ...mayNhieu,
+    ...troiTrong,
+    ...suong,
+  ],
   // allMay: [...mayIt, ...mayNhieu],
   // allMua: [...dong, ...mua, ...muaNang],
 };

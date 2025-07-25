@@ -3,7 +3,14 @@ import "./Button.css";
 import { Link } from "react-router-dom";
 //  <Button internal = link external = link />
 
-function Button({ internal, external, children, primary = false, onClick }) {
+function Button({
+  internal,
+  external,
+  icon,
+  content,
+  primary = false,
+  onClick,
+}) {
   let Tag = "button";
   const props = { onClick };
   if (internal) {
@@ -18,8 +25,9 @@ function Button({ internal, external, children, primary = false, onClick }) {
   const wrapper_class = "btn-wrapper";
   const primary_class = "primary";
   return (
-    <Tag className={wrapper_class + " " + primary_class}>
-      <span>{children}</span>
+    <Tag className={wrapper_class + " " + primary_class} {...props}>
+      {icon && <span className="button-icon">{icon}</span>}
+      <span>{content}</span>
     </Tag>
   );
 }
