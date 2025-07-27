@@ -7,13 +7,10 @@
   font-size: 1.8rem;
   font-weight: 700;
 }
+
+/* khi nhap chuot thi doi mau  */
 .header-navbar-menuItem:active {
   color: var(--mau-tb1);
-}
-.header-navbar-menuItem:active .active {
-  /* .header-navbar-menuItem:active { nhấp chuột  */
-  color: white;
-  background-color: var(--mau-nhat2);
 }
 
 /* .header-navbar-menuItem { */
@@ -81,4 +78,12 @@
   100% {
     transform: translateY(0px) rotate(15deg);
   }
+}
+
+/* footer  */
+.footer-navbar .header-navbar-menuItem {
+  color: white;
+}
+.footer-navbar .header-navbar-menuItem:hover {
+  background-color: transparent;
 }

@@ -217,6 +217,7 @@
 }
 
 /* hour card ==========================  */
+
 .forecastCard {
   width: 23%;
   min-width: 320px;
@@ -231,9 +232,14 @@
   background-color: var(--mau-nhat3);
   border-radius: 20px;
 }
-.ForecastCard:hover {
+.forecastCard:hover {
   background-color: var(--mau-nhat1);
   transform: scale(1.05);
+}
+
+/* important de hover+click van doi mau  */
+.active-card {
+  background-color: #ffccf9 !important;
 }
 
 /* today hour forecast ==================================  */

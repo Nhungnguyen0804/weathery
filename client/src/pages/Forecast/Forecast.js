@@ -4,17 +4,48 @@ import ForecastCardList from "../../components/Card/ForecastCardList";
 import { useForecastData } from "../../hooks/useForecastData";
 import Button from "../../components/Button/Button";
 import TemperatureChart from "../../components/Chart/TemperatureChart";
-function handleClickForecastType(event) {
-  const text = event.target.innerText;
-  console.log(text);
-}
+import { useState } from "react";
+import RainChart from "../../components/Chart/RainChart";
+import WinCardList from "../../components/Card/WindCardList";
+import { sampleHours } from "../../assets/data/sampleHours";
 function Forecast() {
   let country = "Vietnam";
   const { data, loading } = useForecastData(country);
-  if (loading) return <p>Đang tải dữ liệu ...</p>;
-
   const forecast = data?.forecast;
+  // lay ra id của card đc chọn
+  const [idActiveCard, setIdActiveCard] = useState(0); // default la chưa chọn
+  const [arrHour, setArrHour] = useState();
 
+  const [forecastType, setForecastType] = useState("Nhiệt độ");
+
+  if (loading) return <p>Đang tải dữ liệu ...</p>;
+  function handleClickForecastType(event) {
+    const text = event.target.innerText;
+    setForecastType(text);
+  }
+
+  // const handleClickCard = (index) => {
+  //   setIdActiveCard(index);
+  // };
+  function handleClickCard(index) {
+    setIdActiveCard(index);
+  }
+
+  let activeArrHour;
+  let noForecast = false;
+  if (idActiveCard < 3) {
+    activeArrHour = forecast?.forecastday[idActiveCard].hour;
+    // if (activeArrHour !== arrHour) setArrHour(activeArrHour);
+  } else {
+    activeArrHour = sampleHours[idActiveCard - 3];
+  }
+  if (activeArrHour !== arrHour) setArrHour(activeArrHour);
+  //render chart theo type
+  const renderChartObj = {
+    "Nhiệt độ": <TemperatureChart arrHour={arrHour} />,
+    "Lượng mưa": <RainChart arrHour={arrHour} />,
+    "Hướng gió": <WinCardList arrHour={arrHour} />,
+  };
   return (
     <div className="forecast">
       <div
@@ -38,16 +69,43 @@ function Forecast() {
           </span>{" "}
           Forecast
         </div>
-        <ForecastCardList forecast={forecast} daily />
+        <ForecastCardList
+          forecast={forecast}
+          daily
+          idActive={idActiveCard}
+          onClick={handleClickCard}
+        />
       </div>
-
       {/* hien thi 3 cai button  */}
-
-      <div>
-        <Button content="Nhiệt độ" onClick={handleClickForecastType} />
-        <Button content="Lượng mưa" onClick={handleClickForecastType} />
-        <Button content="Hướng gió" onClick={handleClickForecastType} />
+      <div style={{ margin: "20px", fontSize: "50px", fontWeight: "bold" }}>
+        Dự đoán thời tiết theo giờ ☁️⛅🌧️🌤️
       </div>
+      <div
+        className="forecast-btn"
+        style={{
+          display: "flex",
+          gap: "10px",
+          margin: "20px",
+        }}
+      >
+        <Button
+          content="Nhiệt độ"
+          onClick={handleClickForecastType}
+          activeContent={forecastType}
+        />
+        <Button
+          content="Lượng mưa"
+          onClick={handleClickForecastType}
+          activeContent={forecastType}
+        />
+        <Button
+          content="Hướng gió"
+          onClick={handleClickForecastType}
+          activeContent={forecastType}
+        />
+      </div>
+      {/* content theo button  */}
+      <div>{renderChartObj[forecastType]} </div>
     </div>
   );
 }

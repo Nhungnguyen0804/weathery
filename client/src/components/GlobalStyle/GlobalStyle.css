@@ -42,4 +42,16 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--mau-dam);
+}
+
+a:visited {
+  color: var(--mau-dam);
+}
+a:active {
+  color: var(--mau-tb1);
+}
+
+span {
+  line-height: 1;
 }

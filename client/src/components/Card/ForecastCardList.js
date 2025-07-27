@@ -3,20 +3,21 @@ import HourlyForecastCard from "./HourlyForecastCard";
 import DailyForecastCard from "./DailyForecastCard";
 import times from "../../assets/data/times";
 import { createRandomArray } from "../../assets/data/random/random";
-
-function handleClickCard(index) {
-  console.log(index);
-}
+import { useState } from "react";
+let arrRandom = []; // global de usestate ko rerun cai ham createrandom
+let checkCreateRandom = false; // để nó k auto khởi tạo false thì nó sẽ k adđ thêm arrRandom
 function ForecastCardList({
   isToday = false,
   forecast,
   hourly = false,
   daily = false,
+  idActive,
+  onClick,
 }) {
   //hour là arr
   let arrHour = [];
   let arrDaily = [];
-  let arrRandom = [];
+
   if (isToday) {
     let today = forecast?.forecastday[0];
     arrHour = today.hour;
@@ -40,11 +41,13 @@ function ForecastCardList({
     arrMinTemp.push(forecast?.forecastday[i].day.mintemp_c);
   }
   const lastDate = forecast?.forecastday[2].date;
-  createRandomArray(arrRandom, lastDate, arrMaxTemp, arrMinTemp, 7);
 
-  const handleClickCard = (index) => {
-    console.log(index);
-  };
+  if (!checkCreateRandom) {
+    createRandomArray(arrRandom, lastDate, arrMaxTemp, arrMinTemp, 7);
+    console.log(arrRandom);
+    checkCreateRandom = true;
+  }
+
   return (
     <div className="forecastCardList">
       {arr.map((data, index) => {
@@ -62,7 +65,8 @@ function ForecastCardList({
               key={index}
               data={data}
               id={index}
-              onClick={handleClickCard}
+              idActive={idActive}
+              onClick={onClick}
             />
           );
         }
@@ -78,7 +82,8 @@ function ForecastCardList({
               id={indexReal}
               daily={daily}
               data={randomObj}
-              onClick={handleClickCard}
+              idActive={idActive}
+              onClick={onClick}
             />
           );
         })}

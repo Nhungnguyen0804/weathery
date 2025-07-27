@@ -6,7 +6,9 @@ import "./Menu.css";
   gồm icon, content
   
   */
-function Menu({ children }) {
-  return <nav className="header-navbar-menu-nav">{children}</nav>;
+function Menu({ children, className }) {
+  return (
+    <nav className={`header-navbar-menu-nav ${className}`}>{children}</nav>
+  );
 }
 export default Menu;

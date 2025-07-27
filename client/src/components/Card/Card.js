@@ -11,8 +11,9 @@ import "./Card.css";
 function Card({ children, className = "", id, onClick, ...props }) {
   function handleClick() {
     // gọi hàm từ cha, truyen id len
-    onClick(id);
+    if (onClick !== undefined) onClick(id);
   }
+
   return (
     <section
       className={`card-base ${className}`}

@@ -9,7 +9,8 @@ import { WindIcon, CloudIcon } from "../Icon/Icon";
 import vieCode from "../../assets/data/code.json";
 import dayjs from "dayjs";
 import { getWeek } from "../LocalTime/LocalTime";
-function DailyForecastCard({ id, data, random = false, onClick }) {
+
+function DailyForecastCard({ id, data, idActive, random = false, onClick }) {
   // const day = data.day;
   // const date = data.date;
   // const maxTemp = day.maxtemp_c + "°C";
@@ -35,8 +36,6 @@ function DailyForecastCard({ id, data, random = false, onClick }) {
 
   const nameCase = getWeatherType(code, isDay);
   const CodeIcon = IconComponents[nameCase];
-  let w = "25px";
-  let h = "25px";
 
   const text = vieCode.find((item) => item.code === code);
 
@@ -48,9 +47,12 @@ function DailyForecastCard({ id, data, random = false, onClick }) {
   let w_icon = "150px";
   let h_icon = "150px";
 
+  let classActive = "";
+  if (id === idActive) classActive = "active-card";
+  else classActive = "";
   return (
     <Card
-      className="forecastCard"
+      className={`forecastCard ${classActive}`}
       style={{ minWidth: "200px", height: "320px", textShadow: "none" }}
       id={id}
       onClick={onClick}

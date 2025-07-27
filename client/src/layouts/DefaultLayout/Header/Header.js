@@ -1,6 +1,6 @@
 import "./Header.css";
 import images from "../../../assets/images/images";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 
 function Header() {
   return (
@@ -17,7 +17,7 @@ function Header() {
         </div>
 
         <div className="header-navbar">
-          <Navbar />
+          <Navbar isHeader />
         </div>
       </div>
     </div>

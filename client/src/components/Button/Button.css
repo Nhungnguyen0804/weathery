@@ -2,6 +2,27 @@
   font-size: 1.6rem;
   font-weight: 700;
   min-width: 100px;
-  padding: 9px 16px;
+  /* padding: 9px 16px; */
   border-radius: 4px;
+  background-color: var(--mau-nhat3);
+}
+
+.btn-wrapper:hover {
+  background-color: var(--mau-nhat1);
+}
+
+/* btn forecast , temp,rain,wind ===============  */
+.activeBtn {
+  background-color: var(--mau-nhat1);
+}
+
+.btn-cycle {
+  /* border-radius: 999%; */
+  padding: 10px;
+  border-radius: 50%;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

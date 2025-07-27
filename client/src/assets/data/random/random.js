@@ -23,11 +23,13 @@ export function createRandomArray(
 ) {
   let numberDay;
   type === 5 ? (numberDay = 2) : (numberDay = 4);
+
   let MaxTemp_max = maxInArray(arrMaxTemp);
   let MaxTemp_min = minInArray(arrMaxTemp);
   let MinTemp_max = maxInArray(arrMinTemp);
   let MinTemp_min = minInArray(arrMinTemp);
   // date = "2025-07-25"
+
   for (let i = 1; i <= numberDay; i++) {
     let Obj = {};
     Obj.date = dayjs(date).add(i, "day").format("YYYY-MM-DD");
