@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/weathery/static/css/main.67ee6dcb.css",
+    "main.js": "/weathery/static/js/main.64b26511.js",
+    "static/js/453.cced6ba2.chunk.js": "/weathery/static/js/453.cced6ba2.chunk.js",
+    "static/media/may1.gif": "/weathery/static/media/may1.f8c7589a9a38caeb5c95.gif",
+    "static/media/trong0.gif": "/weathery/static/media/trong0.e7b139741581b44c4dcc.gif",
+    "static/media/mua0.gif": "/weathery/static/media/mua0.42e298e6a88b862302a2.gif",
+    "static/media/mua1.gif": "/weathery/static/media/mua1.ee9aadf8513f3c0e8be3.gif",
+    "static/media/trong1.gif": "/weathery/static/media/trong1.caf7e9dd2b199fea5ed4.gif",
+    "static/media/may0.gif": "/weathery/static/media/may0.9a6f6c907bd0fd394486.gif",
+    "static/media/sunset.png": "/weathery/static/media/sunset.e08457db5a5df74034a8.png",
+    "static/media/bg1.png": "/weathery/static/media/bg1.fd5c7088f876e9a8a5a9.png",
+    "static/media/logo.gif": "/weathery/static/media/logo.6e1217ac230fc8fb9696.gif",
+    "static/media/sunrise.png": "/weathery/static/media/sunrise.04b8e3580501e8d9dac4.png",
+    "static/media/snow1.gif": "/weathery/static/media/snow1.ea813753bd72b0ccbf0c.gif",
+    "static/media/moonrise.png": "/weathery/static/media/moonrise.dfae053155abdaea0dce.png",
+    "static/media/snow0.gif": "/weathery/static/media/snow0.60adf907b0a355d7afcc.gif",
+    "static/media/suong1.gif": "/weathery/static/media/suong1.010170e886ca3a6ddd3e.gif",
+    "static/media/moonset.png": "/weathery/static/media/moonset.642146d6929cfde10f15.png",
+    "static/media/bg.jpg": "/weathery/static/media/bg.9291f6da8096ff6be939.jpg",
+    "static/media/suong0.gif": "/weathery/static/media/suong0.afae50340b9a27811fd6.gif",
+    "static/media/logo.png": "/weathery/static/media/logo.9cf0515265be599b1495.png",
+    "static/media/vision.png": "/weathery/static/media/vision.e4e15adf2c51a815d4dd.png",
+    "static/media/apsuat.png": "/weathery/static/media/apsuat.fc86aa92ac1f2b050f49.png",
+    "static/media/uv.png": "/weathery/static/media/uv.c9cfee26008656db978c.png",
+    "static/media/timezone.png": "/weathery/static/media/timezone.c145975d84f35a6afdd3.png",
+    "index.html": "/weathery/index.html",
+    "main.67ee6dcb.css.map": "/weathery/static/css/main.67ee6dcb.css.map",
+    "main.64b26511.js.map": "/weathery/static/js/main.64b26511.js.map",
+    "453.cced6ba2.chunk.js.map": "/weathery/static/js/453.cced6ba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67ee6dcb.css",
+    "static/js/main.64b26511.js"
+  ]
+}
