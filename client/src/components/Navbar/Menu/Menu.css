@@ -13,17 +13,9 @@
   color: var(--mau-tb1);
 }
 
-/* .header-navbar-menuItem { */
-/* css same btn  */
-/* padding: 9px 16px;
-  border: 2px solid var(--mau-dam3);
-  border-radius: 8px;
-  background-color: var(--mau-nhat3); */
-/* để k chênh  */
-/* } */
-.header-navbar-menuItem:hover {
+/* .header-navbar-menuItem:hover {
   background-color: var(--mau-nhat1);
-}
+} */
 
 /* cha  */
 .header-navbar-menuItem {
@@ -57,8 +49,6 @@
   z-index: 0;
   top: -20px;
   left: -20px;
-
-  /* overflow: hidden; */
 }
 
 /* con 3  */

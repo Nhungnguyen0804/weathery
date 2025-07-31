@@ -8,8 +8,12 @@ import { useState } from "react";
 import RainChart from "../../components/Chart/RainChart";
 import WinCardList from "../../components/Card/WindCardList";
 import { sampleHours } from "../../assets/data/sampleHours";
+import { useCurrentCountry } from "../../context/CountryContext";
+import Loading from "../../components/Loading/Loading";
 function Forecast() {
-  let country = "Vietnam";
+  const { currentCountry } = useCurrentCountry();
+  let country = currentCountry;
+
   const { data, loading } = useForecastData(country);
   const forecast = data?.forecast;
   // lay ra id của card đc chọn
@@ -18,7 +22,7 @@ function Forecast() {
 
   const [forecastType, setForecastType] = useState("Nhiệt độ");
 
-  if (loading) return <p>Đang tải dữ liệu ...</p>;
+  if (loading) return <Loading />;
   function handleClickForecastType(event) {
     const text = event.target.innerText;
     setForecastType(text);
@@ -32,10 +36,8 @@ function Forecast() {
   }
 
   let activeArrHour;
-  let noForecast = false;
   if (idActiveCard < 3) {
     activeArrHour = forecast?.forecastday[idActiveCard].hour;
-    // if (activeArrHour !== arrHour) setArrHour(activeArrHour);
   } else {
     activeArrHour = sampleHours[idActiveCard - 3];
   }
@@ -65,7 +67,8 @@ function Forecast() {
               fontFamily: "Impact Black",
             }}
           >
-            7 DAY
+            <span style={{ color: "#ffccf9" }}>{data?.location?.country}</span>{" "}
+            🌞 7 DAY
           </span>{" "}
           Forecast
         </div>
@@ -78,16 +81,9 @@ function Forecast() {
       </div>
       {/* hien thi 3 cai button  */}
       <div style={{ margin: "20px", fontSize: "50px", fontWeight: "bold" }}>
-        Dự đoán thời tiết theo giờ ☁️⛅🌧️🌤️
+        Dự đoán thời tiết theo giờ ☁️⛅🌧️🌤️☁️
       </div>
-      <div
-        className="forecast-btn"
-        style={{
-          display: "flex",
-          gap: "10px",
-          margin: "20px",
-        }}
-      >
+      <div className="forecast-btn">
         <Button
           content="Nhiệt độ"
           onClick={handleClickForecastType}

@@ -1,0 +1,57 @@
+.homeRow1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "current current current location";
+  min-height: 500px;
+}
+
+.homeRow1-currentCard {
+  grid-area: current;
+}
+
+.homeRow1-locationCard {
+  grid-area: location;
+
+  padding-top: var(--khoang-cach-cua-firstItem);
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+
+.homeRow3-forecastCardList-row {
+  min-height: 500px;
+  margin-top: 60px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeRow3-forecastCardList-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .homeRow1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 350px;
+    grid-template-areas:
+      "current"
+      "location";
+    /* min-height: 500px; */
+  }
+
+  .homeRow1-currentCard {
+    grid-area: current;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeRow1-locationCard {
+    grid-area: location;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}

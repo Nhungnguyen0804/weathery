@@ -11,19 +11,9 @@ import Button from "../../../components/Button/Button";
 function Footer() {
   const sizeIcon = "30px";
   return (
-    <footer
-      style={{
-        textAlign: "center",
-        padding: "20px",
-        background: "var(--mau-dam)",
-        fontWeight: "bold",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <div style={{ display: "flex" }}>
+    <footer className="footer-wrapper">
+      {/* logo + gif  */}
+      <div className="footer-logo" style={{ display: "flex" }}>
         <ImageIcon src={images.logo} alt="logo" width="350px" height="auto" />
         <ImageIcon
           src={images.logoGif}
@@ -32,9 +22,10 @@ function Footer() {
           height="auto"
         />
       </div>
-
+      {/* navbar home today forecast  */}
       <Navbar className="footer-navbar" />
 
+      {/* copyright */}
       <div
         style={{
           borderTop: "2px solid white",
@@ -55,12 +46,12 @@ function Footer() {
         >
           <Button
             external="https://github.com/Nhungnguyen0804"
-            icon={<GithubIcon width={sizeIcon} height={sizeIcon} />}
+            iconLeft={<GithubIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
           />
           <Button
             external="mailto:nhungnguyen8404@gmail.com"
-            icon={<EmailIcon width={sizeIcon} height={sizeIcon} />}
+            iconLeft={<EmailIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
           />
         </div>

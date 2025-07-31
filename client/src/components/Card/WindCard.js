@@ -1,14 +1,8 @@
 import "./Card.css";
 import Card from "./Card";
 import CardItem from "./CardItem";
-import getWeatherType from "../../assets/data/getWeatherType";
-import IconComponents from "../Icon/IconComponent";
-
-import { WindIcon, CompassIconSVG, ToaDoIcon } from "../Icon/Icon";
+import { CompassIconSVG, ToaDoIcon } from "../Icon/Icon";
 import { windDirect } from "../../assets/data/windDirect";
-import vieCode from "../../assets/data/code.json";
-import dayjs from "dayjs";
-import { getWeek } from "../LocalTime/LocalTime";
 
 function WindCard({ hourObj, hour }) {
   let w_icon = "100px";

@@ -7,7 +7,7 @@ import IconComponents from "../Icon/IconComponent";
 import { WindIcon, CloudIcon } from "../Icon/Icon";
 
 import vieCode from "../../assets/data/code.json";
-
+import { useTemp } from "../../context/TemperatureContext";
 function HourlyForecastCard({ data, time }) {
   const code = data.condition.code;
   const isDay = data.is_day;
@@ -19,6 +19,11 @@ function HourlyForecastCard({ data, time }) {
 
   const text = vieCode.find((item) => item.code === code);
 
+  // temp toggle , usetemp, lấy ra {} tempUnit hiện tại
+  const { tempUnit } = useTemp();
+  const tempC = data.temp_c + "°C";
+  const tempF = data.temp_f + "°F";
+  const temp = tempUnit === "C" ? tempC : tempF;
   return (
     <Card className="forecastCard">
       <div className="currentCard-location" style={{ color: "white" }}>
@@ -32,7 +37,7 @@ function HourlyForecastCard({ data, time }) {
           color: "var(--mau-dam)",
         }}
       >
-        <CardItem value={data.temp_c + "°C"} />
+        <CardItem value={temp} />
       </div>
       <div
         className="forecastCard-info"

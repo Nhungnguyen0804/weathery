@@ -16,7 +16,7 @@ export function useForecastData(country) {
         setData(fallbackData);
       })
       .finally(() => setLoading(false)); // luon run du fetch success or ko
-  }, []);
+  }, [country]);
 
   return { data, loading };
 }

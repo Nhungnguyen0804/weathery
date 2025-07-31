@@ -20,12 +20,6 @@ def get_forecast(country):
     response = requests.get(url)
     return jsonify(response.json())
 
-# @app.route('/api/forecast/<country>')
-# def get_forecast(country):
-#     # Thời tiết hiện tại 
-#     url = f"http://api.weatherapi.com/v1/forecast.json?key={API_KEY}&q={country}&days=7"
-#     response = requests.get(url)
-#     return jsonify(response.json())
 
 
 if __name__ == "__main__":

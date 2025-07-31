@@ -2,8 +2,6 @@ import "./Card.css";
 import vieCode from "../../assets/data/code.json";
 import Card from "./Card";
 import CardItem from "./CardItem";
-import Toggle from "../Toggle/Toggle";
-import { useEffect, useState } from "react";
 import { LocationIcon } from "../Icon/Icon";
 import { getWeek } from "../LocalTime/LocalTime";
 import RealTime from "../RealTime/RealTime";
@@ -11,6 +9,8 @@ import getWeatherType from "../../assets/data/getWeatherType";
 import WeatherBackground from "../Icon/WeatherBackground";
 import IconComponents from "../Icon/IconComponent";
 
+import { useTemp } from "../../context/TemperatureContext";
+import { cityDisplay, countryDisplay } from "../../assets/data/country";
 function CurrentCard({ location, current }) {
   const country = location.country;
   const city = location.name;
@@ -19,6 +19,11 @@ function CurrentCard({ location, current }) {
   const nhietDoF = current.temp_f + "°F";
   const tFeelC = current.feelslike_c + "°C";
   const tFeelF = current.feelslike_f + "°F";
+
+  //TOGGLE global
+  const { tempUnit } = useTemp(); // lấy ra temp unit hien tai tu useTemp> useContext
+  const temp = tempUnit === "C" ? nhietDoC : nhietDoF;
+  const tempFeel = tempUnit === "C" ? tFeelC : tFeelF;
   let code = current.condition.code;
 
   let isDay = current.is_day;
@@ -26,30 +31,10 @@ function CurrentCard({ location, current }) {
   // vieCode là mảng
   const text = vieCode.find((item) => item.code === code);
 
-  // nhiệt độ
-  const [t, setT] = useState(nhietDoC);
-
-  // nhiet do cam nhan
-  const [t_feel, setTFeel] = useState(tFeelC);
-  const handleChange = (temp) => {
-    //temp C, F
-    if (temp === "F") {
-      setT(nhietDoF);
-      setTFeel(tFeelF);
-    } else {
-      setT(nhietDoC);
-      setTFeel(tFeelC);
-    }
-  };
-
-  let cityDisplay = {
-    Hanoi: "Hà Nội",
-  };
-
-  let countryDisplay = {
-    Vietnam: "Việt Nam",
-  };
-  let locationDisplay = `${cityDisplay[city]}, ${countryDisplay[country]}`;
+  let locationDisplay =
+    country === "Vietnam"
+      ? `${cityDisplay[city]}, ${countryDisplay[country]}`
+      : country;
 
   // 15/7/2025 13:19
   // let lastTimeDisplay = dayjs(time).format("DD/MM/YYYY HH:mm");
@@ -62,7 +47,7 @@ function CurrentCard({ location, current }) {
   const CodeIcon = IconComponents[nameCase];
 
   let color = "white";
-  nameCase == "suongNight" && (color = "black");
+  nameCase === "suongNight" && (color = "black");
   let backgroundCard = WeatherBackground[nameCase];
 
   return (
@@ -83,15 +68,12 @@ function CurrentCard({ location, current }) {
           <span className="currentCard-date-week">{week}</span>
           <span className="currentCard-date-today">{<RealTime />}</span>
         </div>
-        <div className="currentCard-nhietDo">{t}</div>
+        <div className="currentCard-nhietDo">{temp}</div>
         <div className="currentCard-feelLike">
-          <CardItem label="Feels Like: " value={t_feel} />
+          <CardItem label="Feels Like: " value={tempFeel} />
         </div>
       </div>
       <div className="currentCard-right">
-        <div className="currentCard-btn-toggle">
-          <Toggle onChange={handleChange} />
-        </div>
         <div className="currentCard-iconArea">
           <div className="currentCard-icon">
             {<CodeIcon height="300px" width="300px" />}

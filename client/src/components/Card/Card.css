@@ -77,7 +77,6 @@
 
 .currentCard-text {
   font-size: 30px;
-  /* animation: textMove infinite 3s ease-in-out; */
   font-weight: bold; /* In đậm */
   font-style: italic; /* In nghiêng */
 }
@@ -250,4 +249,171 @@
   overflow: auto;
 
   padding: 20px;
+}
+
+.forecastCardList-typeRow {
+  display: flex;
+  flex-direction: column;
+  overflow: none;
+}
+
+/* daily type row =====================================  */
+.typeRow-dailyForecastCard-card {
+  min-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--mau-nhat3);
+  padding: 40px;
+  text-shadow: none;
+}
+.typeRow-dailyForecastCard-card-week {
+  background-color: var(--mau-dam);
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.typeRow-dailyForecastCard-card-minMaxTemp {
+  min-width: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+/* mobile #################################  */
+@media (max-width: 768px) {
+  /* current card  */
+  .currentCard {
+    /* độ dài main card  */
+    width: 80%;
+    /* flex: 4; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 0;
+
+    margin-top: 230px;
+    padding: 39px;
+    border-radius: 49px;
+  }
+
+  .currentCard-location {
+    background-color: var(--mau-dam);
+    font-weight: bold;
+    font-family: "Calibri" !important;
+
+    padding: 5px 15px;
+    border-radius: 999px;
+    display: inline-block;
+  }
+
+  .currentCard-nhietDo {
+    font-family: "Impact Black";
+    font-size: 50px;
+    text-shadow: 4px 3px 0 #814eae;
+  }
+
+  .currentCard-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15px;
+    line-height: 1;
+  }
+
+  .currentCard-date-week {
+    font-size: 80px;
+    font-family: "Candara Black";
+    text-shadow: 4px 3px 0 #814eae;
+  }
+
+  .currentCard-date-today {
+    padding-left: 10px;
+  }
+  .currentCard-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-items: center;
+  }
+  .currentCard-iconArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currentCard-text {
+    font-size: 30px;
+    font-weight: bold; /* In đậm */
+    font-style: italic; /* In nghiêng */
+  }
+  .currentCard-icon {
+    animation: iconMoveLoop infinite 3s ease-in-out;
+  }
+
+  @keyframes iconMoveLoop {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  .currentCard .cardItem {
+    background-color: transparent;
+  }
+  .currentCard .cardItem-value {
+    text-shadow: 1px 1px 0 #b777ee;
+  }
+
+  /* location card  */
+  .locationCard {
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+  }
+
+  /* daily type row =====================================  */
+  .typeRow-dailyForecastCard-card {
+    min-width: 1200px;
+    height: 80px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--mau-nhat3);
+    padding: 40px;
+    text-shadow: none;
+  }
+  .typeRow-dailyForecastCard-card-week {
+    background-color: var(--mau-dam);
+    min-width: 180px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .typeRow-dailyForecastCard-card-minMaxTemp {
+    min-width: 100px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .typeRow-dailyForecastCard-maxTemp {
+    font-size: 25px !important;
+  }
 }

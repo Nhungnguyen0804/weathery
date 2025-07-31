@@ -28,8 +28,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background: var(--body-color);
-  /* padding: 0 2%; */
-  /* padding trái pải  */
 }
 
 /* cho tất cả các phần tử trên trang. */
@@ -54,4 +52,8 @@ a:active {
 
 span {
   line-height: 1;
+}
+
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
 }

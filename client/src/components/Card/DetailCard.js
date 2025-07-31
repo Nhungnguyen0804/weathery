@@ -21,7 +21,6 @@ function DetailCard({ current }) {
           value={`${current.wind_kph} (km/h)`}
           icon={<WindIcon width={w} height={h} />}
           type="column"
-          //   style = {}
         />
         <CardItem
           value={`${current.wind_mph} (m/h)`}

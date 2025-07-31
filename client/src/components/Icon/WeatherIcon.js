@@ -12,12 +12,7 @@
 // height={height}
 //       fill="currentColor"
 
-export const TroiTrongDay = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const TroiTrongDay = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -108,12 +103,7 @@ export const TroiTrongDay = ({
   );
 };
 
-export const TroiTrongNight = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const TroiTrongNight = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -207,12 +197,7 @@ export const TroiTrongNight = ({
   );
 };
 
-export const MayItDay = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const MayItDay = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -407,12 +392,7 @@ export const MayItDay = ({
   );
 };
 
-export const MayItNight = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const MayItNight = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -817,12 +797,7 @@ export const MayItNight = ({
   );
 };
 
-export const MayNhieuDay = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const MayNhieuDay = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}
@@ -3118,12 +3093,7 @@ export const TuyetDay = ({
 
 export const TuyetNight = TuyetDay;
 
-export const Cloud = ({
-  width = "2rem",
-  height = "2rem",
-  fill = "white",
-  className,
-}) => {
+export const Cloud = ({ width = "2rem", height = "2rem" }) => {
   return (
     <svg
       width={width}

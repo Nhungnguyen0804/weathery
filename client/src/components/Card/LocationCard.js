@@ -2,8 +2,10 @@ import "./Card.css";
 import Card from "./Card";
 import CardItem from "./CardItem";
 import images from "../../assets/images/images";
-import { ImageIcon, ToaDoIcon } from "../Icon/Icon";
-function LocationCard({ location, current }) {
+import { ImageIcon, CompassIconSVG } from "../Icon/Icon";
+import Button from "../Button/Button";
+import { routes } from "../../routes/routes";
+function LocationCard({ location, bg = false, btn = false }) {
   let width = "32px";
   let height = "32px";
   return (
@@ -12,19 +14,19 @@ function LocationCard({ location, current }) {
         label="Quốc gia"
         value={location.country}
         type="column"
-        icon={<ToaDoIcon width={width} height={height} />}
+        icon={<CompassIconSVG width={width} height={height} />}
       />
       <CardItem
         label="Kinh độ"
         value={location.lon}
         type="column"
-        icon={<ToaDoIcon width={width} height={height} />}
+        icon={<CompassIconSVG width={width} height={height} />}
       />
       <CardItem
         label="Vĩ độ"
         value={location.lat}
         type="column"
-        icon={<ToaDoIcon width={width} height={height} />}
+        icon={<CompassIconSVG width={width} height={height} />}
       />
       <CardItem
         label="Múi giờ"
@@ -35,15 +37,19 @@ function LocationCard({ location, current }) {
         }
       />
 
-      <img
-        src={images.bgTodayDetail}
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-          display: "block",
-          borderRadius: "10px",
-        }}
-      />
+      {bg && (
+        <img
+          src={images.bgTodayDetail}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+            display: "block",
+            borderRadius: "10px",
+          }}
+        />
+      )}
+
+      {btn && <Button content="Xem chi tiết" internal={routes.today} />}
     </Card>
   );
 }

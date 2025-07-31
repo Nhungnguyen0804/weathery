@@ -9,11 +9,12 @@ import DetailCard from "../../components/Card/DetailCard";
 
 import ForecastCardList from "../../components/Card/ForecastCardList";
 import { useForecastData } from "../../hooks/useForecastData";
-
+import { useCurrentCountry } from "../../context/CountryContext";
+import Loading from "../../components/Loading/Loading";
 function Today() {
-  let country = "Vietnam";
+  const { currentCountry } = useCurrentCountry();
+  let country = currentCountry;
   const { data, loading } = useForecastData(country);
-  if (loading) return <p>Đang tải dữ liệu ...</p>;
 
   // co the currentWeather undefined khi render lần đầu do chưa fetch
   // currentWeather ? () : (<p> Loading ... <p>)
@@ -27,7 +28,7 @@ function Today() {
 
   return (
     <React.Fragment>
-      {data ? (
+      {!loading ? (
         <div className="today-wrapper">
           <div className="currentCard-wrapper">
             <CurrentCard location={location} current={current} />
@@ -52,7 +53,7 @@ function Today() {
             </div>
             <div className="today-detail-gridContainer">
               <div className="today-detail-gridItem gridLocation">
-                <LocationCard location={location} current={current} />
+                <LocationCard location={location} current={current} bg />
               </div>
               <div className="today-detail-gridItem gridSunset1">
                 <ImgCard
@@ -110,7 +111,7 @@ function Today() {
           </div>
         </div>
       ) : (
-        <p>Đang load dữ liệu </p>
+        <Loading />
       )}
     </React.Fragment>
   );

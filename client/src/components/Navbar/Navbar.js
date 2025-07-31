@@ -7,15 +7,15 @@ function Navbar({ isHeader = false, className }) {
     <>
       <Menu className={className}>
         <MenuItem
-          content="Hôm nay"
-          link={routes.today}
+          content="Trang chủ"
+          link={routes.home}
           icon={<TroiTrongDay width="80px" height="80px" />}
           isHeader={isHeader}
         />
 
         <MenuItem
-          content="Ngày mai"
-          link="/forecast"
+          content="Hôm nay"
+          link="/today"
           icon={<TroiTrongDay width="80px" height="80px" />}
           isHeader={isHeader}
         />
