@@ -1,29 +1,57 @@
+import logo from "./logo.png";
+import logoGif from "./logo.gif";
+
+import rainNight from "./card/mua0.gif";
+import rainDay from "./card/mua1.gif";
+import snowNight from "./card/snow0.gif";
+import snowDay from "./card/snow1.gif";
+import suongNight from "./card/suong0.gif";
+import suongDay from "./card/suong1.gif";
+import mayNight from "./card/may0.gif";
+import mayDay from "./card/may1.gif";
+import clearNight from "./card/trong0.gif";
+import clearDay from "./card/trong1.gif";
+
+import timezoneIcon from "./timezone.png";
+import uvIcon from "./uv.png";
+
+import apSuatIcon from "./apsuat.png";
+import visionIcon from "./vision.png";
+
+import bgTodayDetail from "./bg/bg.jpg";
+import bgForecast from "./bg/bg1.png";
+import sunriseBackground from "./bg/sunrise.png";
+import sunsetBackground from "./bg/sunset.png";
+import moonriseBackground from "./bg/moonrise.png";
+import moonsetBackground from "./bg/moonset.png";
+
 const images = {
-  logo: require("./logo.png"),
-  logoGif: require("./logo.gif"),
-  rainNight: require("./card/mua0.gif"),
-  rainDay: require("./card/mua1.gif"),
-  snowNight: require("./card/snow0.gif"),
-  snowDay: require("./card/snow1.gif"),
-  suongNight: require("./card/suong0.gif"),
-  suongDay: require("./card/suong1.gif"),
-  mayNight: require("./card/may0.gif"),
-  mayDay: require("./card/may1.gif"),
-  clearNight: require("./card/trong0.gif"),
-  clearDay: require("./card/trong1.gif"),
+  logo: logo,
+  logoGif: logoGif,
 
-  timezoneIcon: require("./timezone.png"),
-  uvIcon: require("./uv.png"),
+  rainNight: rainNight,
+  rainDay: rainDay,
+  snowNight: snowNight,
+  snowDay: snowDay,
+  suongNight: suongNight,
+  suongDay: suongDay,
+  mayNight: mayNight,
+  mayDay: mayDay,
+  clearNight: clearNight,
+  clearDay: clearDay,
 
-  apSuatIcon: require("./apsuat.png"),
-  visionIcon: require("./vision.png"),
+  timezoneIcon: timezoneIcon,
+  uvIcon: uvIcon,
 
-  bgTodayDetail: require("./bg/bg.jpg"),
-  bgForecast: require("./bg/bg1.png"),
-  sunriseBackground: require("./bg/sunrise.png"),
-  sunsetBackground: require("./bg/sunset.png"),
-  moonriseBackground: require("./bg/moonrise.png"),
-  moonsetBackground: require("./bg/moonset.png"),
+  apSuatIcon: apSuatIcon,
+  visionIcon: visionIcon,
+
+  bgTodayDetail: bgTodayDetail,
+  bgForecast: bgForecast,
+  sunriseBackground: sunriseBackground,
+  sunsetBackground: sunsetBackground,
+  moonriseBackground: moonriseBackground,
+  moonsetBackground: moonsetBackground,
 };
 
 export default images;

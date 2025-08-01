@@ -4,7 +4,13 @@ import { Fragment } from "react/jsx-runtime";
 import { publicRoutes } from "./routes/routes";
 import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
 import AppProviders from "./context/AppProviders";
+import images from "./assets/images/images";
+import { preloadImages } from "./lib/preloadImages";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    preloadImages(Object.values(images));
+  }, []);
   return (
     <AppProviders>
       <Router basename="/weathery">
