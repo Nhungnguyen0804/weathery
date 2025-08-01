@@ -7,7 +7,7 @@ import AppProviders from "./context/AppProviders";
 function App() {
   return (
     <AppProviders>
-      <Router>
+      <Router basename="/weathery">
         <div className="App">
           <Routes>
             {publicRoutes.map((route, index) => {
